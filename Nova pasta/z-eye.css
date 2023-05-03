@@ -67,6 +67,7 @@ header {
 .menu li ul li{
     display: block;
     width: 100px;
+    background-color: rgba(29, 29, 29, 0.466);
 }
 
 .listra{
