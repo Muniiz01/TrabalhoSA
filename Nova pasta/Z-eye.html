@@ -15,17 +15,29 @@
             <a href="https://youtu.be/dQw4w9WgXcQ"><img class="logo" src="logo2.png"></a>
             <input type="text" class="pesquisa" id="pesquisa" placeholder="buscar">
             <div>
-                <ul class="menu">
+                <button type="button" onclick="abrir()">Minha Conta</button>
+                <!-- <ul class="menu">
                     <li class="listra">Minha Conta
                     <ul class="menu_centro">
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Cadastro</a></li>
                     </ul>
                 </li>
-                </ul>
+                </ul> -->
             </div>
         </header>
          <div class="border"></div>
+
+         <div id="popup" class="popup">
+            <button type="button"><img src="Delete" alt=""></button>
+            <p>Login/Cadastro</p>
+
+         </div>
     </body>
+    <script>
+        function abrir(){
+            document.getElementById('popup').style.display='block'
+        }
+    </script>
 
 </html>
