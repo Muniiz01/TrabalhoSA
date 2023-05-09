@@ -41,55 +41,7 @@ header {
     margin-top: 4px;
 
 }
-/* .menu li ul{
-    display: none;
-    position: absolute;
-    
-}
 
-.menu li{
-    float: left;
-    list-style: none;
-    position: relative;
-    cursor: context-menu;
-    
-}
-
-.menu li a{
-    color: white; 
-    text-decoration: none;
-}
-
-.menu li a:hover{
-    
-    color: #860016;
-}
-
-.menu li:hover ul{
-    display: block;
-}
-
-.menu li ul li{
-    display: block;
-    width: 100px;
-    padding: 10px;
-    background-color: rgba(29, 29, 29, 0.562);
-}
-
-.listra{
-    margin-top: 10%;
-    border: 1px solid #860016;
-    border-radius: 10px;
-    color: white;
-    width: 100px;
-    text-align: center;
-    padding: 5px;
-}
-
-.menu_centro{
- margin-top: 8px;
-margin-left: -5px;
-} */
 
 .popup{
     position: fixed;
@@ -101,12 +53,50 @@ margin-left: -5px;
     width: 400px;
     height: 200px;
     padding: 15px;
-    border-radius: 10%;
-    background-color: whitesmoke;
+    border-radius: 5%;
+    background-color: rgb(41, 41, 41);
     display: none;
 }
 
+.buttonfechar{
+    position: relative;
+    left: 380px;
+    padding: 2px;
+    font-size: large;
+    background-color: transparent;
+    border: transparent;
+    color: #860016;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
 
+.buttonfechar:hover{
+    background-color: rgba(99, 98, 98, 0.26);
+}
+
+.login{
+    position: relative;
+    margin-left: 2%;
+    top: 25%;
+    background-color: silver;
+    border-radius: 5%;
+    font-size: 18px;
+    width: 100px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #860016;
+}
+
+.logincadastro{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item{
+    
+    
+}
 @keyframes bordercolor {
     0% {
         background-color: rgb(238, 61, 144);
