@@ -41,7 +41,7 @@ header {
     margin-top: 4px;
 
 }
-.menu li ul{
+/* .menu li ul{
     display: none;
     position: absolute;
     
@@ -89,32 +89,22 @@ header {
 .menu_centro{
  margin-top: 8px;
 margin-left: -5px;
+} */
+
+.popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 10%;
+    background-color: whitesmoke;
+    display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @keyframes bordercolor {
