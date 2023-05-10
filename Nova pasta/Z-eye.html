@@ -7,40 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z-eye</title>
     <link rel="stylesheet" href="z-eye.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Sigmar&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-   
+
     <header>
-            <a href="https://youtu.be/dQw4w9WgXcQ"><img class="logo" src="logo2.png"></a>
-            <input type="text" class="pesquisa" id="pesquisa" placeholder="buscar">
-            <div>
-                <button type="button" onclick="abrir()">Minha Conta</button>
-            </div>
-        </header>
+        <div class="containerCatg">
+            <div class="cat"></div>
+            <div class="cat"></div>
+            <div class="cat"></div>
+        </div>
 
-         <div class="border"></div>
+        <div class="containerLogo">
+            <a href="" class="logo"><img class="imagLogo" src="logo2.png"></a>
+            <p class="nameLogo">Z-eye</p>
+        </div>
 
-         <div id="popup" class="popup">
-            <button type="button" onclick="fechar()" class="buttonfechar">X</button>
+        <input type="text" class="pesquisa" id="pesquisa" placeholder="busque aqui">
+        <div>
 
-            <div class="logincadastro">
-            
-                <div class="grid-item"><a href="login.html" class="login">LOGIN</a></div>
+        </div>
+    </header>
+
+    <div class="border"></div>
+
+    <div id="popup" class="popup">
+        <button type="button" onclick="fechar()" class="buttonfechar">X</button>
+
+        <div class="logincadastro">
+
+            <div class="grid-item"><a href="login.html" class="login">LOGIN</a></div>
 
             <div class="grid-item"><a href="">cadastro</a></div>
         </div>
-         </div>
+    </div>
 
-    </body>
-    <script>
-        function abrir(){
-            document.getElementById('popup').style.display='block'
-        }
-        function fechar(){
-            document.getElementById('popup').style.display='none'
-        }
-    </script>
+</body>
+<script>
+    function abrir() {
+        document.getElementById('popup').style.display = 'block'
+    }
+    function fechar() {
+        document.getElementById('popup').style.display = 'none'
+    }
+</script>
 
 </html>
