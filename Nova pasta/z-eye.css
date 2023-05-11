@@ -75,7 +75,7 @@ header {
 
 .containerCatg{
     position: relative;
-    top: 15%;
+    top: 35%;
     left: 5%;
     height: 27px;
     display: flex;
@@ -83,21 +83,56 @@ header {
     cursor: pointer;
    
 }
-
-.containerCatg:hover{
-    
-    
-
+.barraMenu{
+    width: 40px;
+    height: 90px;
 }
 
-
-.cat{
+ 
+.containerCatg ul{
+    position: absolute;
+    list-style: none;
     background-color: whitesmoke;
-    border-radius: 14%;
-    margin-top: 16%;
-    width: 35px;
-    height: 5px;
+    width: 250px;
+    top: 40px;
 }
+
+.containerMenu p{
+
+    padding-left: 25%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    background-color: whitesmoke;
+    cursor: context-menu;
+    box-shadow: 0px 12px 34px -13px #000;
+}
+
+.containerMenu a{
+    text-decoration: none;
+    color: #000;
+}
+.containerMenu li{
+   
+    padding: 10px; 
+}
+
+.containerMenu li:hover{
+    background-color: rgba(98, 102, 105, 0.904);
+}
+
+.containerMenu{
+
+    font-family: 'Asap', sans-serif;
+    font-size: medium;
+    display: none;
+}
+
+.containerCatg:hover ul{
+    
+    display: block;
+
+}
+
 
 .popup {
     position: fixed;
