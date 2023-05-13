@@ -6,4 +6,3 @@ function fechar() {
     document.getElementById('popup').style.display = 'none'
 }
 
-$('.single-item').slick();

@@ -3,6 +3,9 @@
     padding: 0%;
 }
 
+
+
+
 body {
     height: 100vh;
     margin: 0;
@@ -81,6 +84,7 @@ header {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    z-index: 1;
    
 }
 .barraMenu{
@@ -122,6 +126,7 @@ header {
 
 .containerMenu{
 
+    
     font-family: 'Asap', sans-serif;
     font-size: medium;
     display: none;
@@ -184,6 +189,32 @@ header {
     padding: 10px;
 }
 
+.banner{
+    position: relative;
+    width: 1000px;
+    margin:  auto;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #860016;
+    text-align: center;
+
+}
+
+.slideProdutos{
+    width: 550px;
+    margin: 100px auto;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.produto{
+margin-right: 10px;
+background-color: red;
+width: 50px;
+height: 100px;
+}
 
 @keyframes bordercolor {
     0% {
