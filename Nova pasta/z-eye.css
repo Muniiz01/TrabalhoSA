@@ -88,7 +88,7 @@ header {
    
 }
 .barraMenu{
-    width: 40px;
+    width: 45%;
     height: 90px;
 }
 
@@ -189,31 +189,40 @@ header {
     padding: 10px;
 }
 
+.containerBody{
+    margin: 10% auto;
+    width: 60%;
+    height: 100ch;
+    background-color: rgb(34, 34, 34);
+}
 .banner{
     position: relative;
-    width: 1000px;
-    margin:  auto;
+    top: 4%;
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
     color: white;
-    padding-left: 40px;
-    padding-right: 40px;
     background-color: #860016;
     text-align: center;
 
 }
 
 .slideProdutos{
-    width: 550px;
-    margin: 100px auto;
+    position: relative;
+    display: block;
+    top: 18%;
+    left: 5%;
+    width: 90%;
     color: white;
-    padding-left: 40px;
-    padding-right: 40px;
+   
 }
 
 .produto{
-margin-right: 10px;
-background-color: red;
-width: 50px;
-height: 100px;
+    margin-right: 10px;
+    background-color: silver;
+    text-align: center;
+    border: 1px solid black;
+
 }
 
 @keyframes bordercolor {
