@@ -47,10 +47,10 @@
 
 
     <!-- vou deixar aqui, ainda vou utilizar -->
-    <!-- <div id="popup" class="popup">
+    <div id="popup" class="popup">
         <button type="button" onclick="fechar()" class="buttonfechar">X</button>
         <div class="logincadastro"></div>
-    </div> -->
+    </div>
 
     <div class="banner">
         <div>Logitech</div>
@@ -62,17 +62,40 @@
 
     <nav class="containerBody">
 
+        <div class="borderProduto">Destaque</div>
+
+
         <div class="slideProdutos">
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
-            <div class="produto"><p>nome produto</p> <button>nao clica</button></div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
         </div>
 
     </nav>
@@ -84,6 +107,18 @@
 </body>
 
 <script>
+
+    function abrir() {
+        document.getElementById('popup').style.display = 'block'
+    }
+    function fechar() {
+        document.getElementById('popup').style.display = 'none'
+    }
+
+
+
+
+
     $('.banner').slick({
         infinite: true,
         swipe: true,

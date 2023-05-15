@@ -13,6 +13,13 @@ body {
     background-color: rgb(29, 29, 29);
 }
 
+.borderProduto{
+    background-color: #860016;
+    height: 8%;
+    margin-top: 10px;
+
+}
+
 .border {
     animation: bordercolor 5s linear infinite;
     height: 10px;
