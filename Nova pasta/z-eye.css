@@ -31,7 +31,7 @@ header {
 .pesquisa {
     position: relative;
     top: 15%;
-    left: 30%;
+    left: 23%;
     width: 23%;
     height: 60%;
     padding: 4px 13px;
@@ -45,7 +45,7 @@ header {
 
 .containerLogo {
     position: relative;
-    left: 20%;
+    left: 10%;
     display: flex;
     flex-direction: row;
     
@@ -79,7 +79,7 @@ header {
 .containerCatg{
     position: relative;
     top: 35%;
-    left: 5%;
+    
     height: 27px;
     display: flex;
     flex-direction: column;
