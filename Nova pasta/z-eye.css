@@ -38,11 +38,11 @@ header {
 .pesquisa {
     position: relative;
     top: 15%;
-    left: 15%;
+    left: 18%;
     width: 23%;
-    height: 60%;
+    height: 90%;
     padding: 4px 13px;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgb(29, 29, 29);
     color: rgb(255, 255, 255);
     border: 1px solid #860016;
