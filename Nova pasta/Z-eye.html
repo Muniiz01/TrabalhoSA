@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Sigmar&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick.css" />
-    <link rel="stylesheet" type="text/css" href="slide-slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
 
@@ -38,14 +38,22 @@
             <p class="nameLogo">Z-eye</p>
         </div>
 
-        <input type="text" class="pesquisa" id="pesquisa" placeholder="busque aqui">
+        <input type="search" class="pesquisa" id="pesquisa" placeholder="busque aqui">
 
-        <button type="button" onclick="abrir()" class="buttonAbrir"></button>
+        <div class="containerUsuario">
+            <ul class="opUsuario">
+                <li><button onclick="login()"></button></li>
+                <li><button onclick="cadastro()"></button></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- <button type="button" onclick="abrir()" class="buttonAbrir"></button>
 
         <div id="popup" class="popup">
             <button type="button" onclick="fechar()" class="buttonfechar">X</button>
             <div class="logincadastro"><a href="login.html">Login</a></div>
-        </div>
+        </div> -->
 
     </header>
     <div class="border"></div>
@@ -108,11 +116,11 @@
 
 <script>
 
-    function abrir() {
-        document.getElementById('popup').style.display = 'block'
+    function login() {
+        window.location.href= "login.html"
     }
-    function fechar() {
-        document.getElementById('popup').style.display = 'none'
+    function cadastro() {
+    
     }
 
 

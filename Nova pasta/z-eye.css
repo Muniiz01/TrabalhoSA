@@ -147,13 +147,13 @@ header {
 
 
 .popup {
-    
+    position: relative;
     margin: 0 auto;
-    width: 400px;
-    height: 200px;
-    padding: 15px;
+    top: 65%;
+    width: 15%;
+    height: 150px;
     border-radius: 5%;
-    background-color: rgb(41, 41, 41);
+    background-color: whitesmoke;
     display: none;
     z-index: 1;
 }
@@ -169,19 +169,15 @@ header {
 
 .buttonfechar {
     position: relative;
-    left: 380px;
-    padding: 2px;
+    left: 90%;
+    top: 5%;
     font-size: large;
     background-color: transparent;
     border: transparent;
     color: #860016;
-    transition: ease-in-out 0.5s;
     cursor: pointer;
 }
 
-.buttonfechar:hover {
-    background-color: rgba(99, 98, 98, 0.26);
-}
 
 .login {
     position: relative;
@@ -212,7 +208,7 @@ header {
     position: relative;
     top: 4%;
     width: 70%;
-    height: 100px;
+    height: 200px;
     margin: 0 auto;
     color: white;
     background-color: #860016;

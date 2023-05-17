@@ -2,7 +2,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff ;
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -11,10 +11,9 @@
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-    
+
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
-
 }
 /* Arrows */
 .slick-prev,
@@ -71,7 +70,7 @@
     font-size: 20px;
     line-height: 1;
 
-    /* opacity: .75; */
+    opacity: .75;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -127,7 +126,6 @@
 
     display: block;
 
-    right: 10px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -142,7 +140,7 @@
 
     display: inline-block;
 
-    width: 30px;
+    width: 20px;
     height: 20px;
     margin: 0 5px;
     padding: 0;
@@ -180,7 +178,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 30px;
+    font-size: 6px;
     line-height: 20px;
 
     position: absolute;
@@ -194,7 +192,7 @@
     text-align: center;
 
     opacity: .25;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -202,5 +200,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: white    ;
+    color: black;
 }
