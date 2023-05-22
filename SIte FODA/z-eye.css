@@ -3,9 +3,6 @@
     padding: 0%;
 }
 
-
-
-
 body {
     height: 100vh;
     margin: 0;
@@ -13,18 +10,16 @@ body {
     background-color: rgb(29, 29, 29);
 }
 
-.borderProduto{
+.borderProduto {
     background-color: #860016;
     height: 8%;
     margin-top: 10px;
-
 }
 
 .border {
     animation: bordercolor 5s linear infinite;
     height: 10px;
     margin-top: 10px;
-
 }
 
 header {
@@ -33,6 +28,27 @@ header {
     flex-direction: row;
     height: 6%;
     background-color: rgb(29, 29, 29);
+}
+
+.containerUsuario {
+    MARGIN position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.opcaoUsuario {
+    display: none;
+    position: relative;
+}
+
+.itemU {
+    list-style: none;
+    display: none;
+}
+
+.opcaoUsuario:hover {
+    display: block;
 }
 
 .pesquisa {
@@ -47,7 +63,6 @@ header {
     color: rgb(255, 255, 255);
     border: 1px solid #860016;
     font-size: medium;
-
 }
 
 .containerLogo {
@@ -55,10 +70,9 @@ header {
     left: 10%;
     display: flex;
     flex-direction: row;
-    
-
 }
-.nameLogo{
+
+.nameLogo {
     position: relative;
     top: 15%;
     left: 5%;
@@ -66,16 +80,11 @@ header {
     font-family: 'Asap', sans-serif;
     font-family: 'Sigmar', cursive;
     font-size: 26px;
-
-
 }
 
 .logo {
-
     position: relative;
     margin-top: 4px;
-
-
 }
 
 .imagLogo {
@@ -83,24 +92,22 @@ header {
     height: 100%;
 }
 
-.containerCatg{
+.containerCatg {
     position: relative;
     top: 35%;
-    
     height: 27px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     z-index: 1;
-   
 }
-.barraMenu{
+
+.barraMenu {
     width: 45%;
     height: 90px;
 }
 
- 
-.containerCatg ul{
+.containerCatg ul {
     position: absolute;
     list-style: none;
     background-color: whitesmoke;
@@ -108,8 +115,7 @@ header {
     top: 40px;
 }
 
-.containerMenu p{
-
+.containerMenu p {
     padding-left: 25%;
     padding-top: 4%;
     padding-bottom: 5%;
@@ -118,33 +124,28 @@ header {
     box-shadow: 0px 12px 34px -13px #000;
 }
 
-.containerMenu a{
+.containerMenu a {
     text-decoration: none;
     color: #000;
 }
-.containerMenu li{
-   
-    padding: 10px; 
+
+.containerMenu li {
+    padding: 10px;
 }
 
-.containerMenu li:hover{
+.containerMenu li:hover {
     background-color: rgba(98, 102, 105, 0.904);
 }
 
-.containerMenu{
-
-    
+.containerMenu {
     font-family: 'Asap', sans-serif;
     font-size: medium;
     display: none;
 }
 
-.containerCatg:hover ul{
-    
+.containerCatg:hover ul {
     display: block;
-
 }
-
 
 .popup {
     position: relative;
@@ -158,13 +159,12 @@ header {
     z-index: 1;
 }
 
-.buttonAbrir{
+.buttonAbrir {
     position: relative;
     left: 25%;
     top: 20%;
     width: 3%;
     height: 60%;
-    
 }
 
 .buttonfechar {
@@ -177,7 +177,6 @@ header {
     color: #860016;
     cursor: pointer;
 }
-
 
 .login {
     position: relative;
@@ -198,13 +197,14 @@ header {
     padding: 10px;
 }
 
-.containerBody{
+.containerBody {
     margin: 10% auto;
     width: 60%;
     height: 100ch;
     background-color: rgb(34, 34, 34);
 }
-.banner{
+
+.banner {
     position: relative;
     top: 4%;
     width: 70%;
@@ -213,68 +213,55 @@ header {
     color: white;
     background-color: #860016;
     text-align: center;
-
 }
 
-.slideProdutos{
+.slideProdutos {
     position: relative;
     display: block;
     top: 18%;
     left: 5%;
     width: 90%;
     color: white;
-   
 }
 
-.produto{
+.produto {
     margin-right: 10px;
     background-color: silver;
     text-align: center;
     border: 1px solid black;
-
 }
 
 @keyframes bordercolor {
     0% {
         background-color: rgb(238, 61, 144);
     }
-
     10% {
         background-color: #e4054f;
     }
-
     20% {
         background-color: #ec1633;
     }
-
     30% {
         background-color: #860016;
     }
-
     50% {
         background-color: #570206;
     }
-
     60% {
         background-color: #941802;
     }
-
     70% {
         background-color: #d34114;
     }
-
     80% {
         background-color: #f84235;
     }
-
     90% {
         background-color: #e2b900;
     }
-
     95% {
         background-color: rgb(253, 174, 100);
     }
-
     100% {
         background-color: #e4054f;
     }
