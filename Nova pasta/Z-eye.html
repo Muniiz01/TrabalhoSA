@@ -22,6 +22,7 @@
 <body>
 
     <header>
+        <!-- barra lateral com categorias -->
         <div class="containerCatg">
             <img class="barraMenu" src="/Nova pasta/imagens/barramenu.png" alt="">
             <ul class="containerMenu">
@@ -32,14 +33,17 @@
                 <li class="menu"><a href="#">Monte seu PC</a></li>
             </ul>
         </div>
-///////
+
+        <!-- logo no centro -->
         <div class="containerLogo">
             <a href="" class="logo"><img class="imagLogo" src="/Nova pasta/imagens/logo2.png"></a>
             <p class="nameLogo">Z-eye</p>
         </div>
 
+        <!-- barra de pesquisa -->
         <input type="search" class="pesquisa" id="pesquisa" placeholder="busque aqui">
 
+        <!-- menu de login do usuario  -->
         <div class="containerUsuario">
             <ul class="opUsuario">
                 <li><button onclick="login()"></button></li>
@@ -47,32 +51,22 @@
                 <li></li>
             </ul>
         </div>
-
-        <!-- <button type="button" onclick="abrir()" class="buttonAbrir"></button>
-
-        <div id="popup" class="popup">
-            <button type="button" onclick="fechar()" class="buttonfechar">X</button>
-            <div class="logincadastro"><a href="login.html">Login</a></div>
-        </div> -->
-
     </header>
+    <!-- borda com efeito rainbow -->
     <div class="border"></div>
 
-    
-
+    <!-- banner topo com slick -->
     <div class="banner">
         <div><img src="/Nova pasta/imagens/corsair (2).png" alt=""></div>
         <div>promocao</div>
         <div><img src="/Nova pasta/imagens/aceitamos pix.jpg" alt=""></div>
-        <div></div>
+        <div>logitec</div>
         <div>urubu</div>
     </div>
 
+    <!-- slick com produtos  -->
     <nav class="containerBody">
-
         <div class="borderProduto">Destaque</div>
-
-
         <div class="slideProdutos">
             <div class="produto">
                 <p>nome produto</p> <button>nao clica</button>
@@ -105,9 +99,9 @@
                 <p>nome produto</p> <button>nao clica</button>
             </div>
         </div>
-
     </nav>
 
+    <!-- codigo jquery para o slick -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
@@ -117,10 +111,10 @@
 <script>
 
     function login() {
-        window.location.href= "login.html"
+        window.location.href = "login.html"
     }
     function cadastro() {
-    
+
     }
 
 
