@@ -24,7 +24,7 @@
     <header>
         <!-- barra lateral com categorias -->
         <div class="containerCatg">
-            <img class="barraMenu" src="/Nova pasta/imagens/barramenu.png" alt="">
+            <img class="barraMenu" src="/Nova pasta/imagens/barraMenu2.png" alt="">
             <ul class="containerMenu">
                 <p>Departamentos</p>
                 <li class="menu"><a href="#">Hardware</a></li>
@@ -45,9 +45,10 @@
 
         <!-- menu de login do usuario  -->
         <div class="containerUsuario">
+            <p>Olá... Entre!<br><p style="font-size: small;">Fazer login</p></p>
             <ul class="opUsuario">
-                <li><button onclick="login()"></button></li>
-                <li><button onclick="cadastro()"></button></li>
+                <li><a onclick="login()">Login</a></li>
+                <li><a onclick="cadastro()">cadastro</a></li>
                 <li></li>
             </ul>
         </div>
@@ -57,11 +58,11 @@
 
     <!-- banner topo com slick -->
     <div class="banner">
-        <div><img src="/Nova pasta/imagens/corsair (2).png" alt=""></div>
-        <div>promocao</div>
+        <div><img src="/Nova pasta/imagens/loja foda!.png" alt=""></div>
+        <div><img src="/Nova pasta/imagens/corsair traduzido.png" alt=""></div>
+        <div><img src="/Nova pasta/imagens/promocao.png" alt=""></div>
         <div><img src="/Nova pasta/imagens/aceitamos pix.jpg" alt=""></div>
-        <div>logitec</div>
-        <div>urubu</div>
+        <div><img src="/Nova pasta/imagens/logitech2.png" width="1000PX" height="200PX"></div>
     </div>
 
     <!-- slick com produtos  -->
@@ -110,6 +111,7 @@
 
 <script>
 
+//funcao link
     function login() {
         window.location.href = "login.html"
     }
@@ -117,13 +119,10 @@
 
     }
 
-
-
-
-
+//codigo slick dos banner
     $('.banner').slick({
         infinite: true,
-        swipe: true,
+        swipe: false,
         slidesToShow: 1,
         dots: true,
         slidesToScroll: 1,
@@ -132,6 +131,7 @@
         arrows: false
     });
 
+    //codigo slick dos produtos
     $('.slideProdutos').slick({
         infinite: true,
         swipe: false,
