@@ -4,12 +4,21 @@
 }
 
 body {
+    width: 1903px;
     height: 100vh;
+    width: 1920;
     margin: 0;
     padding: 0;
     background-color: rgb(29, 29, 29);
 }
 
+/* alternar o site de acordo com a resolucao  */
+
+@media screen and (max-width: 1902px) {
+    body {
+        width: 1349px;
+    }
+}
 
 /* \\div com efeito rainbow// */
 .border {
@@ -17,6 +26,7 @@ body {
     height: 10px;
     margin-top: 10px;
 }
+
 /* \\conteiner Topo// */
 header {
     padding: 1%;
@@ -25,6 +35,7 @@ header {
     height: 6%;
     background-color: rgb(29, 29, 29);
 }
+
 /* \\Barra de pesquisa// */
 .pesquisa {
     position: relative;
@@ -38,6 +49,7 @@ header {
     color: rgb(255, 255, 255);
     border: 1px solid #860016;
     font-size: medium;
+    text-decoration: none;
 }
 
 /* \\imagen da logo// */
@@ -47,26 +59,30 @@ header {
     display: flex;
     flex-direction: row;
 }
-.nameLogo{
+
+.nameLogo {
     position: relative;
     top: 15%;
     left: 5%;
     color: #860016;
     font-family: 'Asap', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-family: 'Sigmar', cursive;
     font-size: 26px;
 }
+
 .logo {
     position: relative;
     margin-top: 4px;
 }
+
 .imagLogo {
     width: 110%;
     height: 100%;
 }
 
 /* \\barra de menu para categorias// */
-.containerCatg{
+.containerCatg {
     position: relative;
     top: 20%;
     height: 27px;
@@ -75,18 +91,21 @@ header {
     cursor: pointer;
     z-index: 1;
 }
-.barraMenu{
+
+.barraMenu {
     width: 38%;
     height: 90px;
 }
-.containerCatg ul{
+
+.containerCatg ul {
     position: relative;
     list-style: none;
     background-color: rgba(53, 52, 52, 0.774);
     width: 135%;
     top: 10%;
 }
-.containerMenu p{
+
+.containerMenu p {
     padding-left: 16%;
     padding-top: 4%;
     padding-bottom: 5%;
@@ -95,96 +114,166 @@ header {
     box-shadow: 0px 12px 34px -13px #000;
     color: whitesmoke;
 }
-.containerMenu a{
+
+.containerMenu a {
     text-decoration: none;
     color: whitesmoke;
 }
-.containerMenu li{
-    padding: 10px; 
+
+.containerMenu li {
+    padding: 10px;
 }
-.containerMenu li:hover{
+
+.containerMenu li:hover {
     background-color: rgba(98, 102, 105, 0.904);
 }
-.containerMenu{
+
+.containerMenu {
     font-family: 'Asap', sans-serif;
     font-size: medium;
     display: none;
 }
-.containerCatg:hover ul{
+
+.containerCatg:hover ul {
     display: block;
 }
 
 /* \\login e cadastro// */
-.containerUsuario{
+.containerUsuario {
     position: relative;
-    left: 25%;
+    left: 30%;
     top: 20%;
     color: rgb(197, 197, 197);
-    border-right: 2px solid rgb(70, 69, 69);
-    padding: 2px 50px 10px 10px;
+    padding-bottom: 20px;
     cursor: context-menu;
+    text-align: center;
+
 }
-.opUsuario{
+
+@media screen and (max-width: 1902px) {
+    .containerUsuario {
+        position: relative;
+        left: 25%;
+        top: -10%;
+        height: 100px;
+        padding-bottom: 10px;
+        color: rgb(197, 197, 197);
+        padding: 2px 50px 10px 10px;
+        cursor: context-menu;
+    }
+
+    .containerUsuario p {
+        font-family: 'Asap', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Sigmar', cursive;
+    }
+
+}
+
+
+.containerUsuario p {
+    position: relative;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sigmar', cursive;
+}
+
+.opUsuario {
     display: none;
 }
-.containerUsuario ul{
+
+.containerUsuario ul {
     list-style: none;
     position: relative;
     right: 30%;
-    top: 20%;
+    top: 25%;
     background-color: rgba(53, 52, 52, 0.822);
     width: 180%;
-    height: 300%;
+    height: 100px;
     z-index: 1;
     border-radius: 5px;
+
 }
-.containerUsuario:hover ul{
+
+.containerUsuario li {
+    padding: 10px;
+    width: 100px;
+}
+
+
+.containerUsuario:hover ul {
     display: block;
 }
-.containerUsuario a{
-    width: 100%;
+
+.containerUsuario li :hover {
     
+background-color: #000;
 }
 
 /* \\container produtos centro// */
-.containerBody{
+.containerBody {
     margin: 10% auto;
-    width: 60%;
+    width: 50%;
     height: 100ch;
     background-color: rgb(34, 34, 34);
 }
 
-
-/* \\slcik// */
-.banner{
-    position: relative;
-    top: 4%;
-    width: 1000px;
-    height: 200px;
-    margin: 0 auto;
-    color: white;
-    background-color: #860016;
-    text-align: center;
-}
-.borderProduto{
+.borderProduto {
     background-color: #860016;
     height: 60px;
     margin-top: 10px;
 }
-.slideProdutos{
+
+/* \\slcik// */
+.banner {
+    position: relative;
+    top: 4%;
+    width: 60%;
+    height: 30%;
+    margin: 0 auto;
+    color: white;
+    justify-content: center;
+}
+
+.borderProduto {
+    background-color: #860016;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.slideProdutos {
     position: relative;
     display: block;
     top: 18%;
     left: 5%;
     width: 90%;
-    color: white;  
+    color: white;
 }
 
-.produto{
+.produto {
     margin-right: 10px;
     background-color: silver;
     text-align: center;
     border: 1px solid black;
+}
+
+.slick-dots li button:before {
+    color: whitesmoke !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: whitesmoke !important;
+}
+
+.slick-dots {
+    bottom: 20px !important;
+}
+
+@media screen and (max-width: 1902px) {
+    .slick-dots {
+        bottom: -5px !important;
+    }
+
 }
 
 @keyframes bordercolor {

@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="z-eye.css">
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Sigmar&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick.css" />
-    <link rel="stylesheet" type="text/css" href="slide-slick.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Poppins:wght@800&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -37,7 +36,7 @@
         <!-- logo no centro -->
         <div class="containerLogo">
             <a href="" class="logo"><img class="imagLogo" src="/Nova pasta/imagens/logo2.png"></a>
-            <p class="nameLogo">Z-eye</p>
+            <p class="nameLogo">VENUS</p>
         </div>
 
         <!-- barra de pesquisa -->
@@ -45,12 +44,15 @@
 
         <!-- menu de login do usuario  -->
         <div class="containerUsuario">
-            <p>Olá... Entre!<br><p style="font-size: small;">Fazer login</p></p>
+            <p>Olá... Entre!<br>
+            <p style="font-size: small;">Fazer login</p>
+            </p>
             <ul class="opUsuario">
                 <li><a onclick="login()">Login</a></li>
                 <li><a onclick="cadastro()">cadastro</a></li>
                 <li></li>
             </ul>
+        
         </div>
     </header>
     <!-- borda com efeito rainbow -->
@@ -58,11 +60,11 @@
 
     <!-- banner topo com slick -->
     <div class="banner">
-        <div><img src="/Nova pasta/imagens/loja foda!.png" alt=""></div>
-        <div><img src="/Nova pasta/imagens/corsair traduzido.png" alt=""></div>
-        <div><img src="/Nova pasta/imagens/promocao.png" alt=""></div>
-        <div><img src="/Nova pasta/imagens/aceitamos pix.jpg" alt=""></div>
-        <div><img src="/Nova pasta/imagens/logitech2.png" width="1000PX" height="200PX"></div>
+        <div><img src="/Nova pasta/imagens/loja foda!.png" width="100%" alt=""></div>
+        <div><img src="/Nova pasta/imagens/corsair traduzido.png" width="100%" alt=""></div>
+        <div><img src="/Nova pasta/imagens/promocao.png" width="100%" alt=""></div>
+        <div><img src="/Nova pasta/imagens/aceitamos pix.jpg" width="100%" alt=""></div>
+        <div><img src="/Nova pasta/imagens/logitech2.png" width="100%"></div>
     </div>
 
     <!-- slick com produtos  -->
@@ -111,7 +113,7 @@
 
 <script>
 
-//funcao link
+    //funcao link
     function login() {
         window.location.href = "login.html"
     }
@@ -119,7 +121,7 @@
 
     }
 
-//codigo slick dos banner
+    //codigo slick dos banner
     $('.banner').slick({
         infinite: true,
         swipe: false,
@@ -130,6 +132,7 @@
         autoplaySpeed: 2000,
         arrows: false
     });
+
 
     //codigo slick dos produtos
     $('.slideProdutos').slick({
