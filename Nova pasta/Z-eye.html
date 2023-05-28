@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
+    <script src="/Nova pasta/index.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z-eye</title>
     <link rel="stylesheet" href="z-eye.css">
-    <script src="script.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Poppins:wght@800&family=Sigmar&display=swap" rel="stylesheet">
@@ -35,7 +36,7 @@
 
         <!-- logo no centro -->
         <div class="containerLogo">
-            <a href="" class="logo"><img class="imagLogo" src="/Nova pasta/imagens/logo2.png"></a>
+            <a href="/Nova pasta/Z-eye.html" class="logo"><img class="imagLogo" src="/Nova pasta/imagens/logo2.png"></a>
             <p class="nameLogo">VENUS</p>
         </div>
 
@@ -43,17 +44,19 @@
         <input type="search" class="pesquisa" id="pesquisa" placeholder="busque aqui">
 
         <!-- menu de login do usuario  -->
+
         <div class="containerUsuario">
-            <p>Olá... Entre!<br>
-            <p style="font-size: small;">Fazer login</p>
-            </p>
-            <ul class="opUsuario">
-                <li><a onclick="login()">Login</a></li>
-                <li><a onclick="cadastro()">cadastro</a></li>
-                <li></li>
+            <span>
+                <p>Ola... Entre<br>
+                Fazer login</p>
+            </span>
+            <ul class="menuUsuario">
+                <li><a href="#" onclick="login()">Minha conta</a></li>
+                <li><a href="#" onclick="">Favoritos</a></li>
+                <li><a href="#" onclick="">Atendimento</a></li>
             </ul>
-        
         </div>
+        
     </header>
     <!-- borda com efeito rainbow -->
     <div class="border"></div>
@@ -109,17 +112,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
 
+    
 </body>
 
 <script>
-
-    //funcao link
-    function login() {
-        window.location.href = "login.html"
-    }
-    function cadastro() {
-
-    }
 
     //codigo slick dos banner
     $('.banner').slick({
