@@ -1,0 +1,299 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    width: 1903px;
+    height: 100vh;
+    width: 1920;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 29, 29);
+}
+
+/* alternar o site de acordo com a resolucao  */
+
+@media screen and (max-width: 1902px) {
+    body {
+        width: 1349px;
+    }
+}
+
+/* \\div com efeito rainbow// */
+.border {
+    width: 100%;
+    animation: bordercolor 5s linear infinite;
+    height: 10px;
+    margin-top: 10px;
+}
+
+/* \\conteiner Topo// */
+header {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    height: 6%;
+    background-color: rgb(29, 29, 29);
+}
+
+/* \\Barra de pesquisa// */
+.pesquisa {
+    position: relative;
+    top: 20%;
+    left: 22%;
+    width: 23%;
+    height: 90%;
+    padding: 4px 13px;
+    border-radius: 5px;
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 255, 255);
+    border: 1px solid #860016;
+    font-size: medium;
+    text-decoration: none;
+}
+
+/* \\imagen da logo// */
+.containerLogo {
+    position: relative;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    cursor: context-menu;
+}
+
+.nameLogo {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    color: #860016;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sigmar', cursive;
+    font-size: 26px;
+}
+
+.logo {
+    position: relative;
+    margin-top: 4px;
+}
+
+.imagLogo {
+    width: 110%;
+    height: 100%;
+    cursor: context-menu;
+}
+
+/* \\barra de menu para categorias// */
+.containerCatg {
+    position: relative;
+    top: 20%;
+    left: 3%;
+    height: 27px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.barraMenu {
+    width: 38%;
+    height: 90px;
+}
+
+.containerCatg ul {
+    position: relative;
+    list-style: none;
+    background-color: rgba(53, 52, 52, 0.774);
+    width: 135%;
+    right: 20%;
+    top: 20px;
+}
+
+.containerMenu p {
+    padding-left: 16%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    background-color: rgba(53, 52, 52, 0.822);
+    cursor: context-menu;
+    box-shadow: 0px 12px 34px -13px #000;
+    color: whitesmoke;
+}
+
+.containerMenu a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.containerMenu li {
+    padding: 10px;
+}
+
+.containerMenu li:hover {
+    background-color: rgba(98, 102, 105, 0.904);
+}
+
+.containerMenu {
+    font-family: 'Asap', sans-serif;
+    font-size: medium;
+    display: none;
+}
+
+.containerCatg:hover ul {
+    display: block;
+}
+
+/* \\login e cadastro// */
+.containerUsuario{
+    font-family: 'Asap', sans-serif;
+    font-size: medium;
+    display: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 30%;
+    top: 20%;
+    z-index: 1;
+    color: whitesmoke;
+    padding-bottom: 10px;
+}
+
+.menuUsuario{
+    position: relative;
+    top: 20px;
+    right: 20%;
+    list-style: none;
+    background-color: rgba(53, 52, 52, 0.822);
+    width: 140%;
+}
+.containerUsuario a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.containerUsuario li{
+    padding: 10px;
+}
+.containerUsuario li:hover{
+    background-color: rgba(98, 102, 105, 0.904);
+}
+.containerUsuario ul{
+    display: none;
+}
+.containerUsuario:hover ul{
+    display: block;
+}
+
+
+/* \\container produtos centro// */
+.containerBody {
+    margin: 10% auto;
+    width: 50%;
+    height: 100ch;
+    background-color: rgb(34, 34, 34);
+}
+
+.borderProduto {
+    background-color: #860016;
+    height: 60px;
+    margin-top: 10px;
+}
+
+/* \\slcik// */
+.banner {
+    position: relative;
+    top: 4%;
+    width: 60%;
+    height: 30%;
+    margin: 0 auto;
+    color: white;
+    justify-content: center;
+}
+
+.borderProduto {
+    background-color: #860016;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.slideProdutos {
+    position: relative;
+    display: block;
+    top: 18%;
+    left: 5%;
+    width: 90%;
+    color: white;
+}
+
+.produto {
+    margin-right: 10px;
+    background-color: silver;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.slick-dots li button:before {
+    color: whitesmoke !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: whitesmoke !important;
+}
+
+.slick-dots {
+    bottom: 20px !important;
+}
+
+@media screen and (max-width: 1902px) {
+    .slick-dots {
+        bottom: -5px !important;
+    }
+
+}
+
+@keyframes bordercolor {
+    0% {
+        background-color: rgb(238, 61, 144);
+    }
+
+    10% {
+        background-color: #e4054f;
+    }
+
+    20% {
+        background-color: #ec1633;
+    }
+
+    30% {
+        background-color: #860016;
+    }
+
+    50% {
+        background-color: #570206;
+    }
+
+    60% {
+        background-color: #941802;
+    }
+
+    70% {
+        background-color: #d34114;
+    }
+
+    80% {
+        background-color: #f84235;
+    }
+
+    90% {
+        background-color: #e2b900;
+    }
+
+    95% {
+        background-color: rgb(253, 174, 100);
+    }
+
+    100% {
+        background-color: #e4054f;
+    }
+}

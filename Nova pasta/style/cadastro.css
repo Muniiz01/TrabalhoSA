@@ -1,0 +1,10 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* area externa do cadastro */
+.containerCadastro{
+    width: 100vh;
+    height: 100%;
+
+}

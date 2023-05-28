@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/Nova pasta/script/index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-eye</title>
+    <link rel="stylesheet" href="/Nova pasta/style/z-eye.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Poppins:wght@800&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- barra lateral com categorias -->
+        <div class="containerCatg">
+            <img class="barraMenu" src="/Nova pasta/imagens/barraMenu2.png" alt="">
+            <ul class="containerMenu">
+                <p>Departamentos</p>
+                <li class="menu"><a href="#">Hardware</a></li>
+                <li class="menu"><a href="#">Perifericos</a></li>
+                <li class="menu"><a href="#">Games</a></li>
+                <li class="menu"><a href="#">Monte seu PC</a></li>
+            </ul>
+        </div>
+
+        <!-- logo no centro -->
+        <div class="containerLogo">
+            <a href="/Nova pasta/Z-eye.html" class="logo"><img class="imagLogo" src="/Nova pasta/imagens/logo2.png"></a>
+            <p class="nameLogo">VENUS</p>
+        </div>
+
+        <!-- barra de pesquisa -->
+        <input type="search" class="pesquisa" id="pesquisa" placeholder="busque aqui">
+
+        <!-- menu de login do usuario  -->
+
+        <div class="containerUsuario">
+            <span>
+                <p>Ola... Entre<br>
+                Fazer login</p>
+            </span>
+            <ul class="menuUsuario">
+                <li><a href="#" onclick="login()">Minha conta</a></li>
+                <li><a href="#" onclick="">Favoritos</a></li>
+                <li><a href="#" onclick="">Atendimento</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <!-- borda com efeito rainbow -->
+    <div class="border"></div>
+
+    <!-- banner topo com slick -->
+    <div class="banner">
+        <div><img src="/Nova pasta/imagens/loja foda!.png" width="100%" alt=""></div>
+        <div><img src="/Nova pasta/imagens/corsair traduzido.png" width="100%" alt=""></div>
+        <div><img src="/Nova pasta/imagens/promocao.png" width="100%" alt=""></div>
+        <div><img src="/Nova pasta/imagens/aceitamos pix.jpg" width="100%" alt=""></div>
+        <div><img src="/Nova pasta/imagens/logitech2.png" width="100%"></div>
+    </div>
+
+    <!-- slick com produtos  -->
+    <nav class="containerBody">
+        <div class="borderProduto">Destaque</div>
+        <div class="slideProdutos">
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+            <div class="produto">
+                <p>nome produto</p> <button>nao clica</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- codigo jquery para o slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+
+    
+</body>
+
+<script>
+
+    //codigo slick dos banner
+    $('.banner').slick({
+        infinite: true,
+        swipe: false,
+        slidesToShow: 1,
+        dots: true,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false
+    });
+
+
+    //codigo slick dos produtos
+    $('.slideProdutos').slick({
+        infinite: true,
+        swipe: false,
+        slidesToShow: 5,
+        slidesToScroll: 1
+    });
+</script>
+
+</html>
