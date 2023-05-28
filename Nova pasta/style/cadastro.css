@@ -3,6 +3,7 @@ body{
     font-family: 'Asap', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Sigmar', cursive;
+height: 1000px;
 }
 .font{
     position: absolute;
@@ -69,3 +70,4 @@ font-family: 'Sigmar', cursive;
 .col-01 input:valid{
     border-bottom: 2px solid greenyellow;
 }
+
