@@ -1,10 +1,71 @@
-*{
-    margin: 0%;
-    padding: 0%;
+
+body{
+    font-family: 'Asap', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sigmar', cursive;
+}
+.font{
+    position: absolute;
+    left: 23%;
+    top: 25%;
+    color: whitesmoke;
 }
 /* area externa do cadastro */
-.containerCadastro{
-    width: 100vh;
-    height: 100%;
+.areaCadastro{
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+    width: 60%;
+    height: 40%;
+    top: 20%;
+    left: 20%;
+    padding: 10px;
+    background-color: rgb(80, 78, 78);
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 3px 7px 15px 13px rgba(0,0,0,0.3);
+    
+    
+}
+.button{
+    position: absolute;
+    top: 70%;
+    left: 76%;
+    width: 150px;
+    padding: 10px;
+    background-color: #860016;
+    color: whitesmoke;
+    border: 0;
+    transition: 0.5s ease-in-out;
+}
+.button:hover{
+    opacity: 0.70;
+    transform: scale(0.90, 0.90);
+}
+.col-01{
+    position: relative;
+    float: left;
+    padding: 20px;
+    left: 5%;
+   
+}
 
+.col-01 input{
+    width: 250px ;
+    padding: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid black;
+    color: whitesmoke;
+    outline: 0;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.col-01 input:focus{
+    border-bottom: 2px solid #860016;
+    transform: scale(1.1, 1.1);
+}
+.col-01 input:valid{
+    border-bottom: 2px solid greenyellow;
 }

@@ -8,6 +8,7 @@
     <title>Cadastro-venus</title>
     <link rel="stylesheet" href="/Nova pasta/style/z-eye.css">
     <link rel="stylesheet" href="/Nova pasta/style/cadastro.css">
+    <script src="/Nova pasta/script/cadastro.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -56,16 +57,50 @@
     <div class="border"></div>
 
     <!-- area de cadastro -->
-    <div class="contaierCadastro">
-        <div class="areaCadastro">
-            <div><input type="text" name="primeironome" id="primeiroNome"></div>
-            <div><input type="text" name="segundonome" id="segundoNome"></div>
-            <div><input type="date" name="datanascimento" id="dataNascimento"></div>
-            <div><input type="number" name="cpfusuario" id="cpfusUario"></div>
-            <div><input type="" name="telefoneusuario" id="telefoneUsuario"></div>
-            <div><input type="email" name="emailusuario" id="emailUsuario"></div>
-            <div><input type="password" name="senhausuario" id="senhaUsuario"></div>
-        </div>
+
+    <p class="font">Complete sua conta</p>
+    <div class="areaCadastro">
+        <form action="#">
+            <div class="col-01">
+                <label for="primeiroNome"></label>
+                <input type="text" name="primeironome" id="primeiroNome" pattern="[A-Za-z]{1,}"
+                    title="Somente letras, tente novamente" autocomplete="off" placeholder="Primeiro nome" required>
+            </div>
+            <div class="col-01">
+                <label for="segundoNome"></label>
+                <input type="text" name="segundonome" id="segundoNome" pattern="[A-Z a-z]{1,}"
+                    title="Somente letras, tente novamente" autocomplete="off" placeholder="segundo nome" required>
+            </div>
+            <div class="col-01">
+                <label for="dataNascimento"></label>
+                <input type="date" name="datanascimento" required id="dataNascimento" autocomplete="off"
+                    placeholder="data de Aniversario">
+            </div>
+            <div class="col-01 ">
+                <label for="cpfusUario"></label>
+                <input type="text" name="cpfusuario" id="cpfusUario" minlength="11     " maxlength="14"
+                    autocomplete="off" placeholder="Cpf" required>
+            </div>
+            <div class="col-01">
+                <label for="telefoneUsuario"></label>
+                <input type="text" name="telefoneusuario" id="telefoneUsuario" onkeyup="fone(event)" autocomplete="off"
+                    placeholder="Telefone" required>
+            </div>
+            <div class="col-01">
+                <label for="emailUsuario"></label>
+                <input type="email" name="emailusuario" id="emailUsuario"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="E-mail" autocomplete="off" required>
+            </div>
+            <div class="col-01">
+                <label for="senhaUsuario"></label>
+                <input type="password" name="senhausuario" id="senhaUsuario" autocomplete="off" required
+                    placeholder="insira uma senha">
+
+            </div>
+            
+                <input type="submit" class="button">
+
+        </form>
     </div>
 </body>
 
