@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     width: 1903px;
     height: 100vh;
     width: 1920;
@@ -52,6 +53,9 @@ header {
     font-size: medium;
     outline: 0;
 }
+::placeholder{
+    color: whitesmoke;
+}
 
 /* \\imagen da logo// */
 .containerLogo {
@@ -86,6 +90,7 @@ font-family: 'Sigmar', cursive;
 
 /* \\barra de menu para categorias// */
 .containerCatg {
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     top: 20%;
     left: 3%;
@@ -95,6 +100,7 @@ font-family: 'Sigmar', cursive;
     flex-direction: column;
     cursor: pointer;
     z-index: 1;
+    
 }
 
 .barraMenu {
@@ -146,7 +152,7 @@ font-family: 'Sigmar', cursive;
 
 /* \\login e cadastro// */
 .containerUsuario{
-    font-family: 'Asap', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     display: none;
     position: relative;
@@ -156,7 +162,7 @@ font-family: 'Sigmar', cursive;
     top: 20%;
     z-index: 1;
     color: whitesmoke;
-    padding-bottom: 10px;
+    padding-bottom: 100px;
 }
 
 .menuUsuario{

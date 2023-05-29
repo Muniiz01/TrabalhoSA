@@ -1,46 +1,72 @@
-body{
-    
-    font-family: 'Asap', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Sigmar', cursive;
-    
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
-.font{
-    position: absolute;
-    left: 41%;
-    top: 26%;
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.font {
+    position: relative;
+    float: left;
+    left: 30px;
+    top: 20px;
     color: whitesmoke;
     font-size: larger;
 }
 
-.login{
-    position:relative;
-    margin: 10% auto;
+.login {
+    position: relative;
+    margin: 8% auto;
+    left: 250px;
     display: block;
-    width: 20%;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     text-align: right;
     background-color: rgb(80, 78, 78);
     border: 0;
     border-radius: 10px;
-    box-shadow: 3px 7px 28px 12px rgba(0,0,0,0.5);
-    
+    box-shadow: 3px 7px 28px 12px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
-.camp-01{
+
+.cadastro {
+    position: relative;
+    margin: 9.4% auto;
+    display: block;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    border: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: #490611;
+
+}
+.cadastro p{
+    position: relative;
+    left: 70px;
+    top: 30px;
+}
+
+.camp-01 {
     position: relative;
     padding: 24px;
-    top: 5%;
-    left: 20%;
-    width: 50%;
-    
+    top: 60px;
+    left: 20px;
+    width: 250px;
+
 }
-.camp-02{
+
+.camp-02 {
     position: relative;
     right: 8%;
     top: 10%;
     width: 50%;
 }
-.camp-02 input{
+
+.camp-02 input {
     width: 30%;
     padding: 5px;
     font-size: 15px;
@@ -49,12 +75,13 @@ font-family: 'Sigmar', cursive;
     color: whitesmoke;
     transition: 0.5s ease-in-out;
 }
-.camp-02 input:hover{
-opacity: 0.8;
-transform: scale(0.90, 0.90);
+
+.camp-02 input:hover {
+    opacity: 0.8;
+    transform: scale(0.90, 0.90);
 }
 
-.camp-01 input{
+.camp-01 input {
     width: 100%;
     height: 30px;
     border: 0;
@@ -65,28 +92,33 @@ transform: scale(0.90, 0.90);
     color: whitesmoke;
 
 }
-::placeholder{
+
+::placeholder {
     color: whitesmoke;
 }
-.camp-01 input:focus{
+
+.camp-01 input:focus {
     border-bottom: 2px solid #860016;
     transform: scale(1.1, 1.1);
 }
-.login a{
+
+.btcadastro {
     position: relative;
     text-decoration: none;
     color: whitesmoke;
     font-size: medium;
-    top: 28%;
-    right: 3%;
+    border-top: 2px solid black;
+
     transition: 0.4s ease-in-out;
 }
-.login a:hover{
+
+.login a:hover {
     background-color: black;
     color: #860016;
-    
+
 }
-.blocos li{
+
+.blocos li {
     background-color: #860016;
     display: block;
     position: absolute;
@@ -97,12 +129,13 @@ transform: scale(0.90, 0.90);
     border: 0;
     z-index: -1;
 }
-.blocos{
+
+.blocos {
     padding: 0;
     margin: 0;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -119,7 +152,7 @@ ul{
     }
 
     100% {
-        transform: translateX(100vw);
+        transform: translateX(98vw);
         opacity: 0;
     }
 }
