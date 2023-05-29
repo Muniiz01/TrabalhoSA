@@ -5,28 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Nova pasta/style/login.css">
-
+    <link rel="stylesheet" href="/Nova pasta/style/z-eye.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Poppins:wght@800&family=Sigmar&display=swap"
+        rel="stylesheet">
+<script src="/Nova pasta/script/index.js"></script>
 </head>
 
 <body>
-    <div class="border" id="login">
-        <div class="interior">
-            <h1>login</h1>
-            <div class="caixa">
-                <p>email</p>
-                <input type="email" class="email" placeholder="exemplo@gmail.com"></div>
-            <div class="caixa">
-                <p>senha</p>
-                <input type="password" class="senha" placeholder="senha"></div>
-            <a href="#">esqueci a senha</a>
-            <div class="caixa2">
-                <button type="submit">enviar</button>
-                <div class="caixa3"> não possui conta? <a href="cadastro">cadastre-se</a></div>
-            </div>
+    <header>
+        <div class="containerCatg">
+            <img class="barraMenu" src="/Nova pasta/imagens/barraMenu2.png" alt="">
+            <ul class="containerMenu">
+                <p>Departamentos</p>
+                <li class="menu"><a href="#">Hardware</a></li>
+                <li class="menu"><a href="#">Perifericos</a></li>
+                <li class="menu"><a href="#">Games</a></li>
+                <li class="menu"><a href="#">Monte seu PC</a></li>
+            </ul>
         </div>
-    </div>
+
+        <!-- logo no centro -->
+        <div class="containerLogo">
+            <a href="/Nova pasta/html/Z-eye.html" class="logo"><img class="imagLogo" src="/Nova pasta/imagens/logo2.png"></a>
+            <p class="nameLogo">VENUS</p>
+        </div>
+
+        <!-- barra de pesquisa -->
+        <input type="search" class="pesquisa" id="pesquisa" placeholder="busque aqui">
+
+        <!-- menu de login do usuario  -->
+
+        <div class="containerUsuario">
+            <span>
+                <p>Ola... Entre<br>
+                    Fazer login</p>
+            </span>
+            <ul class="menuUsuario">
+                <li><a href="#" onclick="login()">Minha conta</a></li>
+                <li><a href="#" onclick="">Favoritos</a></li>
+                <li><a href="#" onclick="">Atendimento</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- border efeito rainbow -->
+    <div class="border"></div>
+
+    <form action="#">
+        <ul class="blocos">
+            <li
+                style="width: 30px; height: 30px; left: -42px; top: 22%; animation-delay: 8.5s; animation-duration: 20s;">
+            </li>
+            <li
+                style="width: 115px; height: 115px; left: -120px; top: 85%; animation-delay: 0.9s; animation-duration: 22s; ">
+            </li>
+            <li
+                style="width: 67px; height: 67px; left: -87px; top: 47%; animation-delay: 23s; animation-duration: 17.8971s;">
+            </li>
+            <li
+                style="width: 109px; height: 109px; left: -110px; top: 38%; animation-delay: 1s; animation-duration: 17s;">
+            </li>
+            <li style="width: 45px; height: 45px; left: -85px; top: 81%; animation-delay: 5s; animation-duration: 21s;">
+            </li>
+            <li style="width: 68px; height: 68px; left: -90px; top: 15%; animation-delay: 4s; animation-duration: 17s;">
+            </li>
+            <li style="width: 59px; height: 59px; left: -69px; top: 16%; animation-delay: 2s; animation-duration: 14s;">
+            </li>
+            <li
+                style="width: 67px; height: 67px; left: -87px; top: 64%; animation-delay: 6.225s; animation-duration: 20.5271s;">
+            </li>
+            <li
+                style="width: 20px; height: 20px; left: -20px; top: 13%; animation-delay: 3.90465s; animation-duration: 16.1981s;">
+            </li>
+            <li
+                style="width: 74px; height: 74px; left: -90px; top: 44%; animation-delay: 8.3957s; animation-duration: 14.4653s;">
+            </li>
+            <li
+                style="width: 108px; height: 108px; left: -122px; top: 17%; animation-delay: 0.92498s; animation-duration: 23.1364s;">
+            </li>
+            <li
+                style="width: 68px; height: 68px; left: -88px; top: 14%; animation-delay: 9.7834s; animation-duration: 17.0478s;">
+            </li>
+            <li
+                style="width: 115px; height: 115px; left: -115px; top: 54%; animation-delay: 12.5235s; animation-duration: 20.3353s;">
+            </li>
+            <li
+                style="width: 22px; height: 22px; left: -42px; top: 19%; animation-delay: 13.3825s; animation-duration: 22.4930s;">
+            </li>
+            <li
+                style="width: 67px; height: 67px; left: -87px; top: 57%; animation-delay: 14.4720s; animation-duration: 33.9674s;">
+            </li>
+            <li
+                style="width: 109px; height: 109px; left: -116px; top: 18%; animation-delay: 12.01239s; animation-duration: 27.9512s;">
+            </li>
+            <li
+                style="width: 45px; height: 45px; left: -65px; top: 28%; animation-delay: 13.02904s; animation-duration: 31.7194s;">
+            </li>
+
+        </ul>
+
+        <p class="font">Login :</p>
+        <div class="login">
+            <div class="camp-01">
+                <input type="text" placeholder="E_MAIL">
+            </div>
+            <div class="camp-01">
+                <input type="text" placeholder="SENHA">
+            </div>
+            <div class="camp-02">
+                <input type="submit" value="Entrar">
+            </div>
+            <a href="#" onclick="cadastro()">Crie sua conta!</a>
+        </div>
+    </form>
 
 </body>
 

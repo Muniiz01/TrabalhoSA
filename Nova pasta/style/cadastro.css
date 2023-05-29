@@ -50,6 +50,9 @@ height: 1000px;
     left: 5%;
    
 }
+::placeholder{
+    color: whitesmoke;
+}
 
 .col-01 input{
     width: 250px ;

@@ -50,7 +50,7 @@ header {
     color: rgb(255, 255, 255);
     border: 1px solid #860016;
     font-size: medium;
-    text-decoration: none;
+    outline: 0;
 }
 
 /* \\imagen da logo// */
@@ -68,8 +68,8 @@ header {
     left: 5%;
     color: #860016;
     font-family: 'Asap', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Sigmar', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sigmar', cursive;
     font-size: 26px;
 }
 
