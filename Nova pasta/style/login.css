@@ -3,9 +3,21 @@ body {
 }
 
 nav {
+    position: relative;
     display: flex;
     flex-direction: row;
+    animation-name: login;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes login{
+    from {left: -1010px;}
+    to {left: 0px;}
+}
+
+
 
 .font {
     position: relative;
@@ -33,16 +45,26 @@ nav {
 
 .cadastro {
     position: relative;
-    margin: 9.4% auto;
+    margin: 10% auto;
     display: block;
-    right: 100px;
+    right: 400px;
     width: 300px;
-    height: 300px;
+    height: 270px;
+
     border: 0;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     background-color: #490611;
+    animation-name: cadastro;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
 
+@keyframes cadastro{
+    from {left: -400px;}
+
+    to {left: -150px;}
 }
 .cadastro p{
     position: relative;
@@ -61,9 +83,9 @@ nav {
 
 .camp-02 {
     position: relative;
-    right: 8%;
-    top: 10%;
-    width: 50%;
+    right: 100px;
+    top: 100px;
+    width: 200px;
 }
 
 .camp-02 input {
@@ -102,20 +124,29 @@ nav {
     transform: scale(1.1, 1.1);
 }
 
+.border2{
+    background-color: black;
+    position: relative;
+    padding: 1px;
+    width: 100px;
+    top: 40px;
+    left: 50px;
+}
 .btcadastro {
     position: relative;
     text-decoration: none;
     color: whitesmoke;
     font-size: medium;
-    border-top: 2px solid black;
-
-    transition: 0.4s ease-in-out;
+    top: 80px;
+    left: 80px;
+    padding: 5px;
+    border-radius: 5px;
+   transition: 0.4s ease-in-out;
 }
 
-.login a:hover {
+.btcadastro:hover {
     background-color: black;
     color: #860016;
-
 }
 
 .blocos li {
