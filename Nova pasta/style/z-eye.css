@@ -53,7 +53,8 @@ header {
     font-size: medium;
     outline: 0;
 }
-::placeholder{
+
+::placeholder {
     color: whitesmoke;
 }
 
@@ -72,8 +73,8 @@ header {
     left: 5%;
     color: #860016;
     font-family: 'Asap', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Sigmar', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sigmar', cursive;
     font-size: 26px;
 }
 
@@ -100,7 +101,7 @@ font-family: 'Sigmar', cursive;
     flex-direction: column;
     cursor: pointer;
     z-index: 1;
-    
+
 }
 
 .barraMenu {
@@ -151,7 +152,7 @@ font-family: 'Sigmar', cursive;
 }
 
 /* \\login e cadastro// */
-.containerUsuario{
+.containerUsuario {
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     display: none;
@@ -165,7 +166,7 @@ font-family: 'Sigmar', cursive;
     padding-bottom: 100px;
 }
 
-.menuUsuario{
+.menuUsuario {
     position: relative;
     top: 20px;
     right: 20%;
@@ -173,21 +174,25 @@ font-family: 'Sigmar', cursive;
     background-color: rgba(53, 52, 52, 0.822);
     width: 140%;
 }
-.containerUsuario a{
+
+.containerUsuario a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-.containerUsuario li{
+.containerUsuario li {
     padding: 10px;
 }
-.containerUsuario li:hover{
+
+.containerUsuario li:hover {
     background-color: rgba(98, 102, 105, 0.904);
 }
-.containerUsuario ul{
+
+.containerUsuario ul {
     display: none;
 }
-.containerUsuario:hover ul{
+
+.containerUsuario:hover ul {
     display: block;
 }
 
@@ -195,18 +200,43 @@ font-family: 'Sigmar', cursive;
 /* \\container produtos centro// */
 .containerBody {
     margin: 10% auto;
-    width: 50%;
+    width: 60%;
     height: 100ch;
     background-color: rgb(34, 34, 34);
 }
 
 .borderProduto {
     background-color: #860016;
-    height: 60px;
+    height: 50px;
     margin-top: 10px;
 }
 
 /* \\slcik// */
+
+.produto img {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    background-color: #000;
+}
+
+.efeito {
+    top: 10px;
+    margin-top: 50px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition:  0.4s ease-in-out;
+}
+
+.efeito:hover{
+    transform: scale(1.2, 1.1);
+    
+}
+
 .banner {
     position: relative;
     top: 4%;
@@ -217,26 +247,33 @@ font-family: 'Sigmar', cursive;
     justify-content: center;
 }
 
-.borderProduto {
-    background-color: #860016;
-    height: 60px;
-    margin-top: 10px;
-}
-
 .slideProdutos {
     position: relative;
     display: block;
     top: 18%;
-    left: 5%;
-    width: 90%;
+    left: 6%;
+    width: 89%;
     color: white;
 }
 
 .produto {
     margin-right: 10px;
-    background-color: silver;
+    background-color: whitesmoke;
     text-align: center;
-    border: 1px solid black;
+    border: 0;
+    padding: 10px;
+    text-overflow: ellipsis;
+    text-align: left;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.produto p {
+
+    text-align: left;
+    height: 50px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .slick-dots li button:before {

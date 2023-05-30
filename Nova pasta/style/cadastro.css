@@ -1,13 +1,10 @@
 
 body{
-    font-family: 'Asap', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Sigmar', cursive;
-height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .font{
     position: absolute;
-    left: 23%;
+    left: 160px;
     top: 25%;
     color: whitesmoke;
 }
@@ -16,10 +13,10 @@ height: 1000px;
     display: flex;
     flex-flow: wrap;
     position: relative;
-    width: 60%;
-    height: 40%;
+    width: 1100px;
+    height: 300px;
     top: 20%;
-    left: 20%;
+    left: 130px;
     padding: 10px;
     background-color: rgb(80, 78, 78);
     border-radius: 5px;
@@ -30,7 +27,7 @@ height: 1000px;
 }
 .button{
     position: absolute;
-    top: 70%;
+    top: 79%;
     left: 76%;
     width: 150px;
     padding: 10px;
