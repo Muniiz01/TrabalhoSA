@@ -1,0 +1,53 @@
+.pai {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    background-color: #860016;
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.marcio {
+    color: rgb(136, 138, 139);
+    display: block;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
+.nomeProduto {
+    font-size: 50px;
+}
+
+.precoProduto {
+    font-size: 25px;
+}
+
+.comprar {
+    margin-right: ;
+    margin-top: 130px;
+    border-style: none;
+    background-color: #d34114;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.comprar:hover {
+    background-color: greenyellow;
+}
+
+.comprar:active {
+    background-color: rgb(154, 47, 255);
+}
+
+.quadro {
+    margin-top: 80px;
+    left: 70px;
+    position: relative;
+    display: block;
+    background-color: greenyellow;
+    height: 300px;
+    width: 300px;
+}
