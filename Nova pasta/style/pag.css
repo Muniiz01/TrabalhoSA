@@ -1,53 +1,103 @@
-.pai {
-    display: block;
+/* divs */
+
+.containerCompra {
+    margin: auto 200px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    background-color: #860016;
-    width: 800px;
-    height: 450px;
-    margin: auto;
-    margin-top: 50px;
 }
 
-.marcio {
-    color: rgb(136, 138, 139);
+.imagem {
     display: block;
-    margin-top: 80px;
-    margin-left: 120px;
-}
-
-.nomeProduto {
-    font-size: 50px;
-}
-
-.precoProduto {
-    font-size: 25px;
-}
-
-.comprar {
-    margin-right: ;
-    margin-top: 130px;
-    border-style: none;
-    background-color: #d34114;
-    width: 250px;
-    height: 50px;
-    border-radius: 50px;
-}
-
-.comprar:hover {
+    width: 400px;
+    height: 400px;
     background-color: greenyellow;
+    z-index: 0;
 }
 
-.comprar:active {
-    background-color: rgb(154, 47, 255);
+.campo1,
+.campo2 {
+    overflow: auto;
+    margin-left: 10px;
 }
 
-.quadro {
-    margin-top: 80px;
-    left: 70px;
+.campo1 {
+    margin-top: 10px;
+}
+
+.campo2 {
+    margin-top: 30px;
     position: relative;
     display: block;
+}
+
+.campos {
+    height: 50px;
+    flex-direction: column;
+    color: aliceblue;
+    display: block;
+    background-color: rgb(54, 54, 54);
+    width: 400px;
+    height: 350px;
+    margin-top: 23px;
+}
+
+.subBorda {
+    border-radius: 50px;
+    background-color: rgb(92, 92, 92);
+    height: 2px;
+    width: 50%;
+}
+
+
+/* botoes */
+
+button {
+    margin-top: 140px;
+    background-color: green;
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+}
+
+.carrinho {
+    margin-left: 40px;
+    background-color: yellow;
+}
+
+button:hover {
     background-color: greenyellow;
-    height: 300px;
-    width: 300px;
+}
+
+button:active {
+    background-color: blueviolet;
+}
+
+
+/* textos */
+
+.garantia {
+    margin-top: 10px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.campos2 {
+    font-size: 20px;
+}
+
+
+/* input */
+
+.cep {
+    width: 50%;
+    color: aliceblue;
+    border: none;
+    background-color: rgb(54, 54, 54);
+}
+
+.cep:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
