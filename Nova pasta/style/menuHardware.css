@@ -6,7 +6,7 @@
 }
 
 .listaProduto{
-    margin-left: 5px;
+    margin-left: 350px;
     display: grid;
     position: relative;
     gap: 50px 100px;
@@ -16,11 +16,22 @@
 }
 .menuLateral{
     position: fixed;
-    width: 200px;
-    height: 500px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 400px;
+    padding: 5px;
+    background-color: rgb(66, 65, 65);
+    border-radius: 10px;
 }
 .subProduto{
     background-color: rgb(66, 65, 65);
-    width: 250px;
+    width: 210px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.subProduto img{
+    border-radius: 5px;
+
 }
