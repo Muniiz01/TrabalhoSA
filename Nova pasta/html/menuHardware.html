@@ -13,9 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Poppins:wght@800&family=Sigmar&display=swap"
         rel="stylesheet">
-    <script src="/Nova pasta/script/index.js"></script>
-    <script src="/Nova pasta/script/cadastro.js"></script>
-
+    
 
 </head>
 
@@ -64,11 +62,11 @@
 
         <nav class="menuLateral">
             <span style="color: #860016; font-size: 20px; font-family: Arial, Helvetica, sans-serif; padding: 10px"><strong> Filtrar por:</strong></span>
-            <details open>
+            <details open >
                 <summary><span style="color: whitesmoke;">Marcas</span></summary>
                 <div class="opfiltro">
                     <label for="amd">
-                        <input type="checkbox" name="" id="fith-00">
+                        <input onchange="filtrar()" type="checkbox" name="" id="fith-00">
                         Amd
                     </label>
 
@@ -182,13 +180,10 @@
         </nav>
 
 
-
-
-        
-
+        <div style="width: 0px; margin-left: 140px; height: 80px; background-color: blue;"></div>
 
         <nav class="listaProduto">
-            <div class="subProduto">
+            <div class="subProduto" id="fith-08">
                 <img src="/Nova pasta/imagens/Imagens-De-Produtos/placasDeVideos/placa-de-video-rtx-4060-ti-ventus-msi-nvidia-geforce-8-gb-gddr6-dlss-ray-tracing_1684770175_m.jpg"
                     alt="">
                 <p class="nomeProduto">Msi ventus rtx 4060 ti 8gb</p>
@@ -276,5 +271,9 @@
     </div>
 
 </body>
+
+<script src="/Nova pasta/script/index.js"></script>
+    <script src="/Nova pasta/script/cadastro.js"></script>
+<script src="/Nova pasta/script/filtroMenuHardware.js"></script>
 
 </html>

@@ -17,6 +17,12 @@ body{
     grid-template-columns: auto auto auto;
     padding: 13px;
 }
+@media screen and (max-width: 1500px) {
+    .listaProduto{
+        margin-left: -10px;
+    }
+    
+}
 .menuLateral{
     display: flex;
     flex-direction: column;
