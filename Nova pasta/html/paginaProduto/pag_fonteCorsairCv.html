@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css do header -->
+    <link rel="stylesheet" href="/Nova pasta/style/z-eye.css">
+    <link rel="stylesheet" href="/Nova pasta/style/pag.css">
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Poppins:wght@800&family=Sigmar&display=swap" rel="stylesheet">
+</head>
+<style>
+    button{
+        color: aliceblue;
+    }
+</style>
+<body>
+
+    <header>
+        <!-- barra lateral com categorias -->
+        <div class="containerCatg">
+            <img class="barraMenu" src="/Nova pasta/imagens/barraMenu2.png" alt="">
+            <ul class="containerMenu">
+                <p>Departamentos</p>
+                <li class="menu"><a href="#">Hardware</a></li>
+                <li class="menu"><a href="#">Perifericos</a></li>
+                <li class="menu"><a href="#">Games</a></li>
+                <li class="menu"><a href="#">Monte seu PC</a></li>
+            </ul>
+        </div>
+
+        <!-- logo no centro -->
+        <div class="containerLogo">
+            <a href="/Nova pasta/html/Z-eye.html" class="logo"><img class="imagLogo" src="/Nova pasta/imagens/logo2.png"></a>
+            <p class="nameLogo">VENUS</p>
+        </div>
+
+        <!-- barra de pesquisa -->
+        <input type="search" class="pesquisa" id="pesquisa" placeholder="busque aqui">
+
+        <!-- menu de login do usuario  -->
+
+        <div class="containerUsuario">
+            <span>
+                    <p>Ola... Entre<br>
+                    Fazer login</p>
+                </span>
+            <ul class="menuUsuario">
+                <li><a href="#" onclick="login()">Minha conta</a></li>
+                <li><a href="#" onclick="">Favoritos</a></li>
+                <li><a href="#" onclick="">Atendimento</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- borda com efeito rainbow -->
+    <div class="border"></div>
+    <!-- resto da pagina ahhahahahahahah BATMAN! -->
+    <div class="containerCompra">
+        <div class="imagem"><img src="/Nova pasta/imagens/imagens 400px dos produtos/fonte-corsair-grande.jpg" width="400px" alt=""></div>
+        <div class="campos">
+            <div>
+                <p class="garantia">24 meses de garantia</p>
+            </div>
+            <div class="campo1">
+                <p class="nome">Fonte Corsair 650w 80 plus bronze</p>
+                <!-- <div class="subBorda"></div> -->
+            </div>
+            <div class="campo2">
+                <p class="nome">R$629.90</p>
+                <!-- <div class="subBorda"></div> -->
+            </div>
+            <div class="campo2">
+                <input class="cep" type="text" placeholder="CEP">
+                <div class="subBorda"></div>
+
+            </div>
+            <button class="carrinho"><strong>+carrinho</strong></button>
+            <button class="compra"><strong>efetuar compra</strong></button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

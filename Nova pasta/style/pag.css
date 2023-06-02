@@ -54,7 +54,7 @@
 
 button {
     margin-top: 140px;
-    background-color: green;
+    background-color: rgb(238, 17, 172);
     border: none;
     height: 50px;
     width: 150px;
@@ -63,15 +63,15 @@ button {
 
 .carrinho {
     margin-left: 40px;
-    background-color: yellow;
+    background-color: rgb(255, 0, 43);
 }
 
 button:hover {
-    background-color: greenyellow;
+    background-color: rgba(28, 185, 212, 0.363);
 }
 
 button:active {
-    background-color: blueviolet;
+    background-color: rgb(71, 71, 71);
 }
 
 

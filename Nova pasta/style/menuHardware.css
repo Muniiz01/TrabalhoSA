@@ -1,3 +1,6 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .cop{
     display: flex;
     margin: auto;
@@ -6,32 +9,84 @@
 }
 
 .listaProduto{
-    margin-left: 350px;
+    margin-left: 300px;
     display: grid;
     position: relative;
-    gap: 50px 100px;
+    gap: 90px 150px;
     width: 100px;
     grid-template-columns: auto auto auto;
     padding: 13px;
 }
 .menuLateral{
-    position: fixed;
     display: flex;
     flex-direction: column;
-    width: 150px;
-    height: 400px;
+    width: 180px;
+    height: 40%;
     padding: 5px;
     background-color: rgb(66, 65, 65);
     border-radius: 10px;
+}
+details > summary{
+    color: #860016;
+    padding: 10px;
+    cursor: pointer;
+}
+.opfiltro{
+    display: flex;
+    flex-direction: column;
 }
 .subProduto{
     background-color: rgb(66, 65, 65);
     width: 210px;
     padding: 5px;
     border-radius: 5px;
-    text-align: center;
+    color: whitesmoke;
 }
 .subProduto img{
     border-radius: 5px;
 
+}
+img{
+    margin-left: 5px;
+}
+
+.nomeProduto{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 15px;
+    text-align: left;
+    font-size: 20px;
+    height: 50px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.precoProduto{
+    position: relative;
+    margin-top: 30px;
+    color: #860016;
+    padding-bottom: 2px;
+    margin-left: 15px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button{
+    margin-top: 50px;
+    width: 100%;
+    height: 30px ;
+    border: 1px solid black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition:  0.4s ease-in-out;
+    border-radius: 10px;
+}
+.button:hover{
+    transform: scale(1.04, 1.14);
+    border-radius: 0;
+    border: 0;
+    background-color: #860016;
+    color: whitesmoke;
+    
 }
