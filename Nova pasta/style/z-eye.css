@@ -203,18 +203,93 @@ header {
 
 /* \\container produtos centro// */
 .containerBody {
+    display: flex;
+    flex-direction: column;
     margin: 10% auto;
-    width: 60%;
-    height: 100ch;
+    width: 70%;
+    height: 200ch;
     background-color: rgb(34, 34, 34);
 }
 
 .borderProduto {
-    background-color: #860016;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    flex-direction: row;
     height: 50px;
     margin-top: 10px;
+    border-bottom: 5px solid #860016;
+    color: whitesmoke;
+}
+.borderProduto img{
+    position: relative;
+    bottom: 10px;
+    width: 70px;
+    height: 70px;
+}
+.borderProduto strong{
+    position: relative;
+    top: 6px;
+    font-size: xx-large;
 }
 
+.borderDep{
+    position: relative;
+    top: 240px;
+}
+.borderDep strong{
+    position: relative;
+    bottom: 10px;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+.borderDep img{
+    
+    height: 50px;
+    width: 50px;
+}
+
+.departamentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 300px;
+    
+    font-size: x-large;
+    cursor: pointer;
+}
+.departamentos div{
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+.departamentos div a{
+    text-decoration: none;
+    color: #860016;
+}
+
+.departamentos div:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.borderVendidos{
+    position: relative;
+    top: 400px;
+}
+.borderVendidos img{
+    position: relative;
+    right: 20px;
+    width: 90px;
+
+}
+.borderVendidos strong{
+    position: relative;
+    bottom: 30px;
+    right: 40px;
+    font-size: x-large;
+    color: whitesmoke;
+}
 /* \\slcik// */
 
 .produto img {
@@ -248,7 +323,7 @@ header {
 
 .banner {
     position: relative;
-    top: 4%;
+    top: 10%;
     width: 60%;
     height: 30%;
     margin: 0 auto;
@@ -259,7 +334,7 @@ header {
 .slideProdutos {
     position: relative;
     display: block;
-    top: 18%;
+    top: 10%;
     left: 5%;
     width: 92%;
     color: white;

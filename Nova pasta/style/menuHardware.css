@@ -9,21 +9,24 @@ body{
 }
 
 .listaProduto{
+    margin-top: 200px;
     margin-left: 300px;
     display: grid;
     position: relative;
-    gap: 90px 150px;
+    gap: 90px 80px;
     width: 100px;
     grid-template-columns: auto auto auto;
     padding: 13px;
+    cursor: pointer;
 }
 @media screen and (max-width: 1500px) {
     .listaProduto{
-        margin-left: -10px;
+        margin-left: 140px;
     }
     
 }
 .menuLateral{
+    margin-top: 170px;
     display: flex;
     flex-direction: column;
     width: 180px;
@@ -40,6 +43,15 @@ details > summary{
 .opfiltro{
     display: flex;
     flex-direction: column;
+}
+.opfiltro label{
+    display: block;
+    padding: 5px;
+    font-size: large;
+    color: whitesmoke;
+}
+.opfiltro label > input:checked{
+    background-color: #860016;
 }
 .subProduto{
     background-color: rgb(66, 65, 65);
@@ -89,10 +101,24 @@ img{
     border-radius: 10px;
 }
 .button:hover{
-    transform: scale(1.04, 1.14);
+    transform: scale(1.05, 1.3);
     border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border: 0;
     background-color: #860016;
     color: whitesmoke;
     
+}
+.bannertop{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 450px;
+    width: 600px;
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+    background-color: #860016;
+    padding: 20px;
+    border-radius: 10px;
 }
