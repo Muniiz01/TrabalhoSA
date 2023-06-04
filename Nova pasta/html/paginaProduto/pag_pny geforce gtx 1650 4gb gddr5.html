@@ -67,7 +67,7 @@
                 <p class="garantia">10 meses de garantia</p>
             </div>
             <div class="campo1">
-                <p class="nome">pny geforce gtx 1650 4gb gddr5/p>
+                <p class="nome">pny geforce gtx 1650 4gb gddr5</p>
                 <!-- <div class="subBorda"></div> -->
             </div>
             <div class="campo2">
@@ -80,11 +80,27 @@
 
             </div>
             <button class="carrinho"><strong>+carrinho</strong></button>
-            <button class="compra"><strong>efetuar compra</strong></button>
+            <button class="compra" id="inputButton" onclick="pagina()"><strong>efetuar compra</strong></button>
         </div>
 
 
     </div>
 </body>
+<script>
+    var btn = document.querySelector("#inputButton");
 
+    btn.addEventListener("click", function(){
+        
+        let valorPr = 'R$ 1.019,99'
+
+        let nome = 'pny geforce gtx 1650 4gb gddr5'
+        
+
+        localStorage.setItem('valueText1', nome);
+        localStorage.setItem('valueText2', valorPr);
+    })
+    function pagina(){
+        window.location.href = 'finalizarCompra.html'
+    }
+</script>
 </html>

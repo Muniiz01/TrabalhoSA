@@ -56,9 +56,15 @@
     <!-- borda com efeito rainbow -->
     <div class="border"></div>
     
-    <!-- area de compra -->
- 
-    <!-- bloco esquerdo -->
+    <!-- popup central  -->
+
+
+    <div id="popup" class="compra-finalizada">
+        <strong> SUA COMPRA FOI FINALIZADA ! ! </strong>
+    </div>
+
+
+    <!-- bloco esquerdo -->    <!-- area de compra -->
     <nav class="areaCompra">
         <div class="descricao-produto">
             <p class="produtoP"><strong>PRODUTO</strong></p>
@@ -82,7 +88,7 @@
             <p id="precoProduto"></p>
         </div>
 
-        <button>Finalizar Compra</button>
+        <button onclick="abrir()">Finalizar Compra</button>
         </div>
     </nav>
 
@@ -97,6 +103,17 @@
         paragrafo2.textContent = localStorage.getItem('valueText2');
         paragrafo3.textContent = localStorage.getItem('valueText2');
     })
+
+    function abrir() {
+    document.getElementById('popup').style.display = 'block'
+    
+    const collection = document.getElementsByClassName("areaCompra");
+for (let i = 0; i < collection.length; i++) {
+  collection[i].style.opacity = "0.5";
+}
+    
+}
+
 </script>
 
-</html>
+</html> 
