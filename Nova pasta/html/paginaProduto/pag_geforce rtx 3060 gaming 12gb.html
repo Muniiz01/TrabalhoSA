@@ -80,11 +80,27 @@
 
             </div>
             <button class="carrinho"><strong>+carrinho</strong></button>
-            <button class="compra"><strong>efetuar compra</strong></button>
+            <button class="compra" id="inputButton" onclick="pagina()"><strong>efetuar compra</strong></button>
         </div>
 
 
     </div>
 </body>
+<script>
+    var btn = document.querySelector("#inputButton");
 
+    btn.addEventListener("click", function(){
+        
+        let valorPr = 'R$ 2.610,99'
+
+        let nome = 'geforce rtx 3060 gaming 12gb'
+        
+
+        localStorage.setItem('valueText1', nome);
+        localStorage.setItem('valueText2', valorPr);
+    })
+    function pagina(){
+        window.location.href = 'finalizarCompra.html'
+    }
+</script>
 </html>

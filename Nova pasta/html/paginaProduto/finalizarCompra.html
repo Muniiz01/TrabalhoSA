@@ -6,22 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- css do header -->
     <link rel="stylesheet" href="/Nova pasta/style/z-eye.css">
-    <link rel="stylesheet" href="/Nova pasta/style/pag.css">
-    <!-- fonte -->
+    <link rel="stylesheet" href="/Nova pasta/style/finalizaCompra.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Poppins:wght@800&family=Sigmar&display=swap" rel="stylesheet">
 </head>
-<style>
-    button{
-        color: aliceblue;
-    }
-</style>
-<body>
 
+<body>
     <header>
+
         <!-- barra lateral com categorias -->
         <div class="containerCatg">
             <img class="barraMenu" src="/Nova pasta/imagens/barraMenu2.png" alt="">
@@ -35,20 +29,22 @@
 
         <!-- logo no centro -->
         <div class="containerLogo">
-            <a href="/Nova pasta/html/Z-eye.html" class="logo"><img class="imagLogo" src="/Nova pasta/imagens/logo2.png"></a>
+            <a href="/Nova pasta/html/Z-eye.html" class="logo"><img class="imagLogo"
+                    src="/Nova pasta/imagens/logo2.png"></a>
             <p class="nameLogo">VENUS</p>
         </div>
 
         <!-- barra de pesquisa -->
         <input type="search" class="pesquisa" id="pesquisa" placeholder="busque aqui">
 
+
         <!-- menu de login do usuario  -->
 
         <div class="containerUsuario">
             <span>
-                    <p>Ola... Entre<br>
+                <p>Ola... Entre<br>
                     Fazer login</p>
-                </span>
+            </span>
             <ul class="menuUsuario">
                 <li><a href="#" onclick="login()">Minha conta</a></li>
                 <li><a href="#" onclick="">Favoritos</a></li>
@@ -59,48 +55,48 @@
     </header>
     <!-- borda com efeito rainbow -->
     <div class="border"></div>
-    <!-- resto da pagina ahhahahahahahah BATMAN! -->
-    <div class="containerCompra">
-        <div class="imagem"><img src="/Nova pasta/imagens/perifericos 400px/headset/headset-sem-fio-logitech-zone-vibe-100-drivers-40-mm-usb-bluetooth-pc-mobile-grafite-981-001214_1672246950_gg.jpg" width="400px" alt=""></div>
-        <div class="campos">
-            <div>
-                <p class="garantia">garantia</p>
-            </div>
-            <div class="campo1">
-                <p class="nome">headset gamer sem fio logitech zone vibe</p>
-                <!-- <div class="subBorda"></div> -->
-            </div>
-            <div class="campo2">
-                <p class="nome">R$ 599,90</p>
-                <!-- <div class="subBorda"></div> -->
-            </div>
-            <div class="campo2">
-                <input class="cep" type="text" placeholder="CEP">
-                <div class="subBorda"></div>
-
-            </div>
-            <button class="carrinho"><strong>+carrinho</strong></button>
-            <button class="compra" id="inputButton" onclick="pagina()"><strong>efetuar compra</strong></button>
+    
+    <!-- area de compra -->
+ 
+    <!-- bloco esquerdo -->
+    <nav class="areaCompra">
+        <div class="descricao-produto">
+            <p class="produtoP"><strong>PRODUTO</strong></p>
+            <p id="nomeProduto"></p>
+            <span class="valorP"> 
+                <p style="font-size: small; padding: 5px;">Preço:</p>        
+            <p id="precoProduto2"></p>
+        </span>
         </div>
 
+<!-- bloco direito -->
+        <div class="info-compra">
+            
+            <span class="resumo" >
+            <p ><strong>RESUMO</strong></p>
+        </span>
+        
+        <div class="caixaPreco">
+            <p style="font-size: medium;">Valor a pagar:</p>
 
-    </div>
+            <p id="precoProduto"></p>
+        </div>
+
+        <button>Finalizar Compra</button>
+        </div>
+    </nav>
+
 </body>
 <script>
-    var btn = document.querySelector("#inputButton");
 
-    btn.addEventListener("click", function(){
-        
-        let valorPr = 'R$ 599,90'
-
-        let nome = 'headset gamer sem fio logitech zone vibe'
-        
-
-        localStorage.setItem('valueText1', nome);
-        localStorage.setItem('valueText2', valorPr);
+    window.onload = ("click", function () {
+        let paragrafo1 = document.querySelector("#nomeProduto");
+        let paragrafo2 = document.querySelector("#precoProduto");
+        let paragrafo3 = document.querySelector("#precoProduto2");
+        paragrafo1.textContent = localStorage.getItem('valueText1');
+        paragrafo2.textContent = localStorage.getItem('valueText2');
+        paragrafo3.textContent = localStorage.getItem('valueText2');
     })
-    function pagina(){
-        window.location.href = 'finalizarCompra.html'
-    }
 </script>
+
 </html>
