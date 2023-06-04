@@ -1,0 +1,88 @@
+
+nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.areaAtendimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+    left: 150px;
+    background-color: rgb(80, 78, 78);
+    width: 540px;
+    height: 700px;
+    border-radius: 10px;
+    
+}
+.input-00{
+    position: relative;
+    float: left;
+    padding: 25px;
+}
+.input-00 label p{
+    color: whitesmoke;
+    position: relative;
+    padding-bottom: 30px;
+}
+.input-00 input{
+    width: 250px;
+    padding: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid black;
+    color: whitesmoke;
+    outline: 0;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+.input-00 input:focus{
+    border-bottom: 2px solid #860016;
+    transform: scale(1.1, 1.1);
+}
+.input-00 input:valid{
+    border-bottom: 2px solid greenyellow;
+}
+.input-00 select{
+    width: 200px;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    color: whitesmoke;
+    background-color: transparent;
+}
+.input-00 select option{
+    color: black;
+}
+.buttonSubmit{
+    position: absolute;
+    top: 635px;
+    left: 440px;
+    width: 70px;
+    padding: 5px;
+    background-color: #860016;
+    color: whitesmoke;
+    border: 0;
+    transition: 0.5s ease-in-out;
+}
+.input-00 textarea{
+    resize: none;
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    color: whitesmoke;
+    background-color: rgb(59, 58, 58);
+}
+.buttonSubmit:hover{
+    opacity: 0.70;
+    transform: scale(0.90, 0.90);
+}
+.InfoComplementar{
+    position: relative;
+    color: whitesmoke;
+    left: 200px;
+    top: 150px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Nova pasta/style/z-eye.css">
+    <link rel="stylesheet" href="/Nova pasta/style/menuAtendimento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,600&family=Poppins:wght@800&family=Sigmar&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <!-- barra lateral com categorias -->
+        <div class="containerCatg">
+            <img class="barraMenu" src="/Nova pasta/imagens/barraMenu2.png" alt="">
+            <ul class="containerMenu">
+                <p>Departamentos</p>
+                <li class="menu"><a href="/Nova pasta/html/menuHardware.html">Hardware</a></li>
+                <li class="menu"><a href="/Nova pasta/html/menuPerifericos.html">Perifericos</a></li>
+                <li class="menu"><a href="/Nova pasta/html/menuGames.html">Games</a></li>
+            </ul>
+        </div>
+
+        <!-- logo no centro -->
+        <div class="containerLogo">
+            <a href="/Nova pasta/html/Z-eye.html" class="logo"><img class="imagLogo"
+                    src="/Nova pasta/imagens/logo2.png"></a>
+            <p class="nameLogo">VENUS</p>
+        </div>
+
+        <!-- barra de pesquisa -->
+        <input type="search" class="pesquisa" id="pesquisa" placeholder="busque aqui">
+
+
+        <!-- menu de login do usuario  -->
+
+        <div class="containerUsuario">
+            <span>
+                <p>Ola... Entre<br>
+                    Fazer login</p>
+            </span>
+            <ul class="menuUsuario">
+                <li><a href="#" onclick="login()">Minha conta</a></li>
+                <li><a href="#" onclick="">Favoritos</a></li>
+                <li><a href="#" onclick="">Atendimento</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- borda com efeito rainbow -->
+    <div class="border"></div>
+
+    <!-- <div class="col-01">
+        <label for="primeiroNome"></label>
+        <input type="text" name="primeironome" id="primeiroNome" pattern="[A-Za-z]{1,}"
+            title="Somente letras, tente novamente" autocomplete="off" placeholder="Primeiro nome" required>
+    </div> -->
+    <nav>
+    <div class="areaAtendimento">
+        <form action="#">
+            <div class="input-00">
+                <label for="nomecompleto">
+                    <input type="text" name="nomeCompleto" id="nomecompleto" pattern="[A-Za-z]{1,}" title="Somente letras" autocomplete="off" placeholder="Digite o nome completo" required>
+                </label>
+            </div>
+            <div class="input-00">
+                <label for="email">
+                    <input type="email" name="Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Digite Email" autocomplete="off" required>
+                </label>
+            </div>
+            <div class="input-00">
+                <label for="telefoneUsuario">
+                    <input type="text" name="telefoneusuario" id="telefoneUsuario" onkeyup="fone(event)" autocomplete="off" placeholder="Telefone" required>
+                </label>
+            </div>
+            <div class="input-00">
+                <p style="color: whitesmoke; padding-bottom: 20px;">Informe seu estado:</p>
+                <select id="estado" name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+            </div>
+            <div class="input-00">
+                <label for="textcont">
+                    <p>Conte-nos como podemos ajudar?</p>
+                    <textarea name="" id="" cols="50" rows="10" placeholder="Relate o problema"></textarea>
+                </label>
+            </div>
+
+            <input class="buttonSubmit" type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="InfoComplementar">
+        <h4>ENVIE SUAS DÚVIDAS, SUGESTÕES OU SOLICITAÇÃO DE SUPORTE <br>  ATRAVÉS DO FORMULÁRIO, RESPONDEREMOS O MAIS BREVE POSSÍVEL.</h4>
+    </div>
+</nav>
+<Script src="/Nova pasta/script/cadastro.js"></Script>
+</body>
+</html>

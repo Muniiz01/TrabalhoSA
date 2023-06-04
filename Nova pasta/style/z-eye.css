@@ -100,7 +100,6 @@ header {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    z-index: 1;
 
 }
 
@@ -122,7 +121,7 @@ header {
     padding-left: 16%;
     padding-top: 4%;
     padding-bottom: 5%;
-    background-color: rgba(53, 52, 52, 0.822);
+    background-color: rgb(53, 52, 52);
     cursor: context-menu;
     box-shadow: 0px 12px 34px -13px #000;
     color: whitesmoke;
@@ -138,7 +137,7 @@ header {
 }
 
 .containerMenu li:hover {
-    background-color: rgba(98, 102, 105, 0.904);
+    background-color: rgb(98, 102, 105);
     border-radius: 5px;
 }
 
@@ -148,11 +147,32 @@ header {
     display: none;
 }
 
-.containerCatg:hover ul {
-    display: block;
-    border-radius: 5px;
-}
 
+.containerCatg:hover ul {
+    
+    border-radius: 5px;
+    animation-duration: 400ms ;
+    animation-fill-mode: forwards;
+    animation-name: slideleft;
+    display: block;
+    }
+    @keyframes slideleft{
+        0%{
+            opacity: 0;
+        }
+        from{
+            right: 100Px;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        to{
+            left: -50px;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
 /* \\login e cadastro// */
 .containerUsuario {
     font-family: Arial, Helvetica, sans-serif;
@@ -173,7 +193,7 @@ header {
     top: 20px;
     right: 20%;
     list-style: none;
-    background-color: rgba(53, 52, 52, 0.822);
+    background-color: rgb(53, 52, 52);
     width: 140%;
 }
 
@@ -187,7 +207,7 @@ header {
 }
 
 .containerUsuario li:hover {
-    background-color: rgba(98, 102, 105, 0.904);
+    background-color: rgb(98, 102, 105);
     border-radius: 5px;
 }
 
@@ -196,12 +216,36 @@ header {
     border-radius: 5px;
 }
 
+@keyframes slidebottom{
+    0%{
+        opacity: 0;
+    }
+    from{
+        top: 100Px;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    to{
+        bottom: -100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 .containerUsuario:hover ul {
+    animation-duration: 300ms;
+    animation-name: slidebottom;
     display: block;
 }
 
 
 /* \\container produtos centro// */
+a{
+    text-decoration: none;
+}
 .containerBody {
     display: flex;
     flex-direction: column;
@@ -244,7 +288,6 @@ header {
 }
 
 .borderDep img{
-    
     height: 50px;
     width: 50px;
 }
@@ -255,7 +298,6 @@ header {
     justify-content: space-around;
     position: relative;
     top: 300px;
-    
     font-size: x-large;
     cursor: pointer;
 }
